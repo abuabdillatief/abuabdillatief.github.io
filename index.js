@@ -144,7 +144,7 @@ document.addEventListener('click', (e) => {
 });
 for (var i = 0; i < selectFooterTags.length; i++) {
     selectFooterTags[i].addEventListener('click', () => {
-        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: abuabdillatief@gmail.com';
+        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com">abuabdillatief@gmail.com</a>';
         selectModal.style.display = 'block';
     })
 }
@@ -156,7 +156,7 @@ selectModal.addEventListener('click', (e) => {
 for (var i = 1; i < selectNavButton.length; i++) {
     selectNavButton[i].addEventListener('click', (e) => {
         let targetTag = e.target.innerHTML;
-        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: abuabdillatief@gmail.com'
+        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com">abuabdillatief@gmail.com</a>';
 
         // if (targetTag === 'Contact') {
         //     document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: abuabdillatief@gmail.com'
