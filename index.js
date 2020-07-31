@@ -1,21 +1,21 @@
 let quotes = [{
-            name: '- David Gilmour',
+            name: '<em>- David Gilmour</em>',
             quote: '<em>Brick&Co.</em> really did an amazing job in putting another brick in the wall. It keeps us on the run.'
         },
         {
-            name: '- Tom Morello',
+            name: '<em>- Tom Morello </em>',
             quote: 'I highly appreciate <em>Brick&Co.</em> for their ecstatic design. The gap between design and tech\'s capabilities is only fictional to them.'
         },
         {
-            name: '- Jonny Greenwood',
+            name: '<em>- Jonny Greenwood</em>',
             quote: 'These guys are weirdly genius. It\'s an instant paranoia just by staring at them.'
         },
         {
-            name: '- Joel Embiid',
+            name: '<em>- Joel Embiid</em>',
             quote: 'I don\'t know man, I don\'t really follow these guys, all I do is ball, nad I trust the process. '
         },
         {
-            name: '- Benny Goodman',
+            name: '<em>- Benny Goodman</em>',
             quote: 'They put great arts by putting both black and white as their signature models. What a perfect harmony they create. '
         }
     ],
@@ -126,6 +126,8 @@ function allChange() {
     colorChange()
     quotesChange()
 }
+//runs only once
+allChange()
 /**************************************************/
 //General change
 document.addEventListener('click', (e) => {
