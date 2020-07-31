@@ -29,17 +29,13 @@
     
     @keyframes you {
         20% {
-            transform: scale(1);
-            opacity: 100;
+            transform: scale(1.1);
         }
         50% {
             transform: scale(.85);
-            opacity: 100;
         }
         80% {
-            transform: translateY(-10px);
-            opacity: 100;
-            transform: scale(1);
+            transform: scale(1.1);
         }
     }
     
@@ -66,11 +62,11 @@
     
     @keyframes first {
         0% {
-            font-size: 2rem;
+            font-size: 2.5rem;
             opacity: 100;
         }
         100% {
-            font-size: 4rem;
+            font-size: 3rem;
             opacity: 0;
         }
     }
@@ -159,6 +155,7 @@
         font-size: 10px;
         font-family: 'Roboto Slab', serif;
         margin: 0 5px;
+ 
     }
     /* ************************************* */
     /* Heading */
@@ -310,9 +307,6 @@
     /* second container */
     /* ************************************* */
     
-    .container-2 {
-        animation: loadTransition 2.5s;
-    }
     
     .container-2 .container {
         display: inline-block;
@@ -321,6 +315,7 @@
     .container-2 .left-container {
         width: 50%;
         position: relative;
+        animation: loadTransition 2.5s;
     }
     
     .container-2 .right-container {
@@ -375,10 +370,6 @@
         border-radius: 15px;
     }
     
-    .first {
-        animation: you 2s ease-in-out;
-    }
-    
     .container-2 h1 {
         text-align: center;
         margin: 0 auto;
@@ -389,15 +380,14 @@
         color: white;
         transition: 2s;
         text-align: center;
-        animation: first 2s;
     }
     
     .container-2 .you {
         width: 17%;
-        transition: 2.5s;
+        transition: 2.5s ease-in-out;
         color: white;
         border-radius: 10px;
-        animation: first 2s;
+        animation: you alternate infinite 2s;
         margin-left: 1%;
     }
     
@@ -610,9 +600,8 @@
         font-size: 4rem;
         text-shadow: .5rem .5rem 1.3rem rgba(236, 231, 231, 0.6);
         box-shadow: .5rem .5rem 1.3rem rgba(0, 0, 0, 0.9);
-        padding: .5rem;
-        animation: you infinite alternate ease-in-out 8s;
-        overflow: visible;
+        padding: .3rem;
+        overflow: auto;
     }
     
     .container-2 .right-container:hover .photo-quote img {

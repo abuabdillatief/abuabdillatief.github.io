@@ -21,7 +21,7 @@ let quotes = [{
     ],
     backgroundColors = [{
             base: '#0a4552',
-            gradient: 'grey'
+            gradient: 'grey',
         },
         {
             base: '#400082',
@@ -74,7 +74,8 @@ let DOM = {
     buildingPhotos: '.photos-1',
     modalBox: '.modal-page',
     modalBoxcontent: '.modal-content',
-    footerTags: '.tags a'
+    footerTags: '.tags a',
+    body: 'body'
 
 }
 let selectQuotes = document.querySelector(DOM.quote),
@@ -88,7 +89,8 @@ let selectQuotes = document.querySelector(DOM.quote),
     selectBuilding = document.querySelector(DOM.buildingPhotos),
     selectModal = document.querySelector(DOM.modalBox),
     selectModalContent = document.querySelector(DOM.modalBoxcontent),
-    selectFooterTags = Array.from(document.querySelectorAll(DOM.footerTags));
+    selectFooterTags = Array.from(document.querySelectorAll(DOM.footerTags)),
+    selectBody = document.querySelector(DOM.body);
 
 /**************************************************************/
 let randomize = (key) => Math.floor(Math.random() * key.length);
@@ -101,6 +103,8 @@ let colorChange = () => {
         selectNavButton[0].style.color = `${backgroundColors[num3].gradient}`;
         selectModalContent.style.boxShadow = `.3rem .3rem 1rem ${backgroundColors[num3].gradient}, -.3rem .3rem 1rem ${backgroundColors[num3].gradient}`;
         selectQuotes.style.textShadow = `-.5px 1px 3.5px ${backgroundColors[num3].gradient}`;
+        // document.body.style.backgroundColor = `${backgroundColors[num3].gradient}40`;
+
 
     },
     photoChange = () => {
@@ -168,23 +172,3 @@ for (var i = 1; i < selectNavButton.length; i++) {
         selectModal.style.display = 'block';
     })
 }
-// //Current Time
-// function currentTime() {
-//     let date = new Date()
-//     let jam = date.getHours();
-//     let menit = date.getMinutes();
-//     let detik = date.getSeconds();
-//     if (jam.length < 2) {
-//         jam = '0' + jam.toString();
-//     }
-//     if (menit.toString().length < 2) {
-//         menit.toString();
-//         menit += '0';
-//     }
-//     if (detik.length < 2) {
-//         detik = '0' + detik.toString();
-//     }
-
-//     document.querySelector('.second-column').innerHTML = `<h1>${jam}:${menit}:${detik}</h1>`
-// }
-// currentTime();
