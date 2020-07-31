@@ -148,7 +148,7 @@ document.addEventListener('click', (e) => {
 });
 for (var i = 0; i < selectFooterTags.length; i++) {
     selectFooterTags[i].addEventListener('click', () => {
-        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com">abuabdillatief@gmail.com</a>';
+        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by clicking the link below: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com?subject=Questions Regarding Your Existence.&body=Hello Mohammad Rendra, I would like to ask some serious question.">abuabdillatief@gmail.com</a>';
         selectModal.style.display = 'block';
     })
 }
@@ -159,7 +159,7 @@ selectModal.addEventListener('click', (e) => {
 });
 for (var i = 1; i < selectNavButton.length; i++) {
     selectNavButton[i].addEventListener('click', (e) => {
-        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by email to the following address: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com">abuabdillatief@gmail.com</a>';
+        document.querySelector(".modal-body p").innerHTML = 'For more information, please send your queries  by clicking the link below: <a style = "text-decoration: none; color: black; "href="mailto:abuabdillatief@gmail.com?subject=Questions Regarding Your Existence.&body=Hello Mohammad Rendra, I would like to ask some serious question.">abuabdillatief@gmail.com</a>';
         selectModal.style.display = 'block';
     })
 }
